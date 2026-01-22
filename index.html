@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oleg Shelmanov | AI Engineer & IT Infrastructure Lead</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Roboto+Mono:wght@300;400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Canvas for Particles -->
+    <canvas id="matrix-canvas"></canvas>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">OS<span class="dot">.</span>DEV</div>
+        <ul class="nav-links">
+            <li><a href="#home" data-text="Главная">Главная</a></li>
+            <li><a href="#competencies" data-text="Компетенции">Компетенции</a></li>
+            <li><a href="#experience" data-text="Опыт">Опыт</a></li>
+            <li><a href="#skills" data-text="Навыки">Навыки</a></li>
+            <li><a href="#contacts" data-text="Контакты">Контакты</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <div class="glitch-wrapper">
+                <h1 class="glitch" data-text="Шелманов Олег Олегович">Шелманов Олег Олегович</h1>
+            </div>
+            <h2 class="typing-effect">AI Engineer | PLM Solutions Specialist | IT Infrastructure Lead</h2>
+            <div class="location">
+                <i class="fas fa-map-marker-alt"></i> г. Москва, м. Коломенская
+            </div>
+            <div class="hero-btns">
+                <a href="#contacts" class="btn btn-primary">Связаться</a>
+                <a href="#experience" class="btn btn-secondary">Опыт работы</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="cyber-circle"></div>
+            <div class="cyber-circle inner"></div>
+            <i class="fas fa-network-wired floating-icon"></i>
+        </div>
+    </header>
+
+    <!-- Goal Section -->
+    <section class="goal-section glass-panel">
+        <div class="container">
+            <h3 class="section-title">Цель & Ожидания</h3>
+            <div class="goal-content">
+                <div class="goal-item">
+                    <i class="fas fa-bullseye"></i>
+                    <div>
+                        <h4>Целевые позиции</h4>
+                        <p>AI Engineer / PLM Solutions Specialist / IT Infrastructure Lead</p>
+                    </div>
+                </div>
+                <div class="goal-item">
+                    <i class="fas fa-ruble-sign"></i>
+                    <div>
+                        <h4>Ожидаемая зарплата</h4>
+                        <p>от 220 000 руб.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Competencies -->
+    <section id="competencies" class="section">
+        <div class="container">
+            <h3 class="section-title">Ключевые компетенции</h3>
+            <div class="cards-grid">
+                <div class="card" data-tilt>
+                    <div class="card-icon"><i class="fas fa-brain"></i></div>
+                    <h4>Искусственный Интеллект</h4>
+                    <p>Автономные агенты, ML/AI инструменты, Flowise, LangFlow, HuggingFace, Ollama, Schema Guided Reasoning (SGR)</p>
+                </div>
+                <div class="card" data-tilt>
+                    <div class="card-icon"><i class="fas fa-code"></i></div>
+                    <h4>Разработка</h4>
+                    <p>Python, C#, API интеграции. Создание решений для цифровизации процессов.</p>
+                </div>
+                <div class="card" data-tilt>
+                    <div class="card-icon"><i class="fas fa-industry"></i></div>
+                    <h4>PLM-системы</h4>
+                    <p>T-FLEX PLM/CAD/CAM/CAE/PDM, T-FLEX DOCs, цифровизация процессов, управление жизненным циклом изделия.</p>
+                </div>
+                <div class="card" data-tilt>
+                    <div class="card-icon"><i class="fas fa-server"></i></div>
+                    <h4>Инфраструктура</h4>
+                    <p>VMware vSphere, Hyper-V, Horizon, Docker, Elasticsearch, Active Directory, MS Exchange, MS SQL, Lotus Domino.</p>
+                </div>
+                <div class="card" data-tilt>
+                    <div class="card-icon"><i class="fas fa-network-wired"></i></div>
+                    <h4>Сетевые технологии</h4>
+                    <p>Cisco ASA, HP ProCurve, Huawei HCNE. Проектирование и сопровождение сетей.</p>
+                </div>
+                <div class="card" data-tilt>
+                    <div class="card-icon"><i class="fas fa-tasks"></i></div>
+                    <h4>Проектное управление</h4>
+                    <p>Внедрение IT-решений, документооборот, автоматизация процессов, работа с CRM/PM/MDM/RM.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h3 class="section-title">Опыт работы</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Июнь 2021 — Апрель 2025</div>
+                    <div class="timeline-content">
+                        <h4>ЦНИИмаш — Специалист по ИТ системам</h4>
+                        <ul>
+                            <li>Администрирование и сопровождение T-FLEX PLM.</li>
+                            <li>Разработка решений для цифровизации процессов и поддержки ИИ-платформ на Python и C#.</li>
+                            <li>Интеграция CAD/CAM/CAE/PDM с корпоративными системами: CRM, PM, MDM, RM.</li>
+                            <li>Работа с Flowise, LangFlow, MCP, AGI, Cursor, Roo, HuggingFace, Ollama, SGR.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Ноябрь 2015 — Апрель 2021</div>
+                    <div class="timeline-content">
+                        <h4>ФГБУ НТИМИ межотраслевой информации — Заведующий отделом / Системный администратор</h4>
+                        <ul>
+                            <li>Поддержка IT-инфраструктуры: серверы, виртуализация, резервное копирование, Active Directory, VMware ESXi, Hyper-V, 1С Bitrix, Alfresco, Docker.</li>
+                            <li>Сопровождение баз данных MS SQL, почтовых серверов MS Exchange и Lotus Domino.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Октябрь 2014 — Ноябрь 2015</div>
+                    <div class="timeline-content">
+                        <h4>Фонд перспективных исследований — Заместитель начальника отдела ИТ</h4>
+                        <ul>
+                            <li>Управление серверами, сетями, виртуализацией, IP-телефонией, ИБ и резервным копированием.</li>
+                            <li>Поддержка проектной документации и контроль исполнения регламентов.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Март 2013 — Октябрь 2014</div>
+                    <div class="timeline-content">
+                        <h4>iTrade — Начальник отдела корпоративных систем</h4>
+                        <ul>
+                            <li>Внедрение СХД, серверных решений, виртуализации.</li>
+                            <li>Проектирование и сопровождение инфраструктуры, взаимодействие с вендорами.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Июнь 1993 — Апрель 2013</div>
+                    <div class="timeline-content">
+                        <h4>ЗАО Руслан Комм. — Заместитель генерального директора по развитию</h4>
+                        <ul>
+                            <li>Руководство техническим направлением: разработка политики, проектирование ИТ-систем, авторский надзор, сопровождение инсталляций.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certificates -->
+    <section class="section bg-darker">
+        <div class="container">
+            <div class="split-layout">
+                <div class="education">
+                    <h3 class="section-title">Образование</h3>
+                    <div class="edu-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h4>Московский электротехнический институт связи (МЭИС)</h4>
+                            <p>Инженер, Радиосвязь и радиовещание</p>
+                            <span class="year">1988</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="section-title mt-2">Языки</h3>
+                    <div class="languages">
+                        <div class="lang-item">
+                            <span>Русский</span>
+                            <div class="progress-bar"><div class="fill" style="width: 100%"></div></div>
+                            <span>Родной</span>
+                        </div>
+                        <div class="lang-item">
+                            <span>Английский</span>
+                            <div class="progress-bar"><div class="fill" style="width: 50%"></div></div>
+                            <span>B1</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="certificates">
+                    <h3 class="section-title">Курсы и Сертификаты</h3>
+                    <ul class="cert-list">
+                        <li><i class="fas fa-certificate"></i> Базовый курс по T-FLEX DOCs (2023)</li>
+                        <li><i class="fas fa-certificate"></i> Администрирование T-FLEX DOCs (2022)</li>
+                        <li><i class="fas fa-certificate"></i> Управление процессом разработки изделия в T-FLEX DOCs PDM (2023)</li>
+                        <li><i class="fas fa-certificate"></i> Securing Cisco Network Devices (SDN 2.0, 2007)</li>
+                        <li><i class="fas fa-certificate"></i> Huawei Certified Network Engineer (HCNE, 2003)</li>
+                        <li><i class="fas fa-certificate"></i> StorNext File System (#3400, 2004)</li>
+                        <li><i class="fas fa-certificate"></i> Электронный документооборот и технологии ПРОФ (2015)</li>
+                        <li><i class="fas fa-plus-circle"></i> Дополнительно: VoIP, Structured Cabling, Definity BCS/ECS, SBW-RU</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h3 class="section-title">Навыки и Технологии</h3>
+            <div class="skills-wrapper">
+                <div class="skill-category">
+                    <h4>Programming</h4>
+                    <div class="tags">
+                        <span>Python</span><span>C#</span><span>API</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>PLM / Digital</h4>
+                    <div class="tags">
+                        <span>T-FLEX PLM</span><span>CAD/CAM/CAE</span><span>DOCs</span><span>PDM</span><span>MDM</span><span>RM</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Virtualization</h4>
+                    <div class="tags">
+                        <span>VMware vSphere</span><span>Hyper-V</span><span>Horizon</span><span>Docker</span><span>Elasticsearch</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Network & Sec</h4>
+                    <div class="tags">
+                        <span>Cisco ASA</span><span>HP ProCurve</span><span>Huawei HCNE</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Server & DB</h4>
+                    <div class="tags">
+                        <span>MS SQL</span><span>MS Exchange</span><span>Lotus Domino</span><span>Active Directory</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>AI / ML</h4>
+                    <div class="tags">
+                        <span>Flowise</span><span>LangFlow</span><span>HuggingFace</span><span>Ollama</span><span>MCP</span><span>AGI</span><span>SGR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contacts -->
+    <footer id="contacts" class="footer">
+        <div class="container">
+            <h3 class="section-title">Контакты</h3>
+            <div class="contact-info">
+                <a href="mailto:shelmanovoo@mail.ru" class="contact-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>shelmanovoo@mail.ru</span>
+                </a>
+                <a href="tel:+79169091963" class="contact-link">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+7 (916) 909-1963</span>
+                </a>
+                <a href="#" class="contact-link">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+            <p class="copyright">© 2026 Oleg Shelmanov. Digital Portfolio.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
